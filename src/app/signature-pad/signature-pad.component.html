@@ -1,0 +1,21 @@
+<div class="container mt-4">
+   <div class="row justify-content-center">
+      <div class="col-lg-6">
+         <div class="card">
+            <div class="card-body">
+               <div class="wrapper">
+                  <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas>
+               </div>
+               <div class="text-center mt-3">
+                  <button class="btn btn-primary" (click)="downloadAsPng()">Save as PNG</button>
+                  <button class="btn btn-primary" (click)="downloadAsJpeg()">Save as JPEG</button>
+                  <button class="btn btn-primary" (click)="downloadAsSvg()">Save as SVG</button>
+                  <button class="btn btn-secondary" (click)="undo()">Undo</button>
+                  <button class="btn btn-secondary" (click)="redo()">Redo</button>
+                  <button class="btn btn-danger" (click)="clear()">Clear</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
